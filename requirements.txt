@@ -1,0 +1,6 @@
+airflow-provider-great-expectations==0.1.4
+apache-airflow-providers-airbyte==3.1.0
+dbt-bigquery==1.2.0
+great-expectations==0.15.19
+pybigquery==0.10.2
+sqlalchemy_bigquery==1.4.4

@@ -1,0 +1,44 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "tags",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "tag"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "tag",
+        "type_": "STRING"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "mlops_course.tags",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "dwh",
+          "limit": 1000
+        },
+        "citation_date": "2022-08-20T22:33:17.797134Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.15.19"
+  }
+}

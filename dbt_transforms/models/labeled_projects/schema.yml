@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+    - name: labeled_projects
+      description: "Tags for all projects"
+      columns:
+          - name: id
+            description: "Unique ID of the project."
+            tests:
+                - unique
+                - not_null
+          - name: title
+            description: "Title of the project."
+            tests:
+                - not_null
+          - name: description
+            description: "Description of the project."
+            tests:
+                - not_null
+          - name: tag
+            description: "Labeled tag for the project."
+            tests:
+                - not_null
